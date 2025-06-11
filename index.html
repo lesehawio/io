@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>ایستگاه‌های آگاهی IO</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Vazirmatn', sans-serif;
+      background: radial-gradient(circle at top, #f7f0ff, #e0d7f3);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    img {
+      margin-top: 50px;
+      width: 200px;
+      filter: drop-shadow(0 0 10px #c084fc) brightness(1.1);
+      animation: shine 3s ease-in-out infinite;
+    }
+
+    @keyframes shine {
+      0%, 100% {
+        filter: drop-shadow(0 0 10px #c084fc) brightness(1.1);
+      }
+      50% {
+        filter: drop-shadow(0 0 20px #e0aaff) brightness(1.4);
+      }
+    }
+
+    h1 {
+      margin-top: 20px;
+      font-size: 1.8rem;
+      color: #4b3b74;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 40px;
+      width: 90%;
+      max-width: 300px;
+    }
+
+    .buttons a {
+      text-align: center;
+      padding: 15px;
+      border-radius: 14px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      transition: transform 0.2s, filter 0.3s;
+    }
+
+    .buttons a:hover {
+      transform: translateY(-3px);
+      filter: brightness(1.1);
+    }
+
+    .btn-morning {
+      background-color: #81C64E; /* آبی روشن برای صبح */
+    }
+
+    .btn-afternoon {
+      background-color: #C64E79; /* بنفش برای عصر */
+    }
+
+    .btn-night {
+      background-color: #4E9BC6; /* آبی برای شب */
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 30px 20px 10px;
+      font-size: 0.9rem;
+      color: #7c3aed;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="https://cdn.imgurl.ir/uploads/913419_ei_1749638326156-removebg-preview_1.png" alt="IO Logo">
+
+  <h1>io - ایستگاه‌های آگاهی روزانه</h1>
+
+  <div class="buttons">
+    <a class="btn-morning" href="/io1/">🌅 IO1 - آغاز صبح</a>
+    <a class="btn-afternoon" href="/io2/">🌸 IO2 - مرور عصر</a>
+    <a class="btn-night" href="/io3/">🌙 IO3 - شب و رهایی</a>
+  </div>
+
+  <footer>
+    with 💜 <strong>lesehawio</strong>
+  </footer>
+
+</body>
+</html>
